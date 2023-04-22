@@ -1,0 +1,24 @@
+.slider .continer .zop {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.slider .continer img {
+  width: 100%;
+}
+
+.slider .continer .bar-slider {
+  text-align: center;
+}
+
+.slider .continer .bar-slider li {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #f3eeee;
+  display: inline-block;
+  align-items: center;
+  border: 1px solid #0e0d0d;
+}

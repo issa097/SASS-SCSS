@@ -1,0 +1,37 @@
+.buttons{
+    background-color: $redcolor;
+    padding: 10px ;
+    border-radius: 10px ;
+    width: 100% ;
+    border: none;
+}
+
+.toggler{
+    background-color: red;
+  padding: 10px;
+  position:absolute;
+  top: 15px;
+  right: 10px;
+  display: none;
+  @media #{$maxmobile}{
+    display: block;
+  
+  }
+  @media (max-width:280px){
+   
+    position: relative;
+    top: 15px;
+    right: -80px;
+    
+  }
+    span{
+        display: block;
+    background-color: white;
+      
+        width: 50px;
+        height: 4px;
+        &:not(:last-child){
+            margin-bottom: 3px;
+        }
+    }
+}

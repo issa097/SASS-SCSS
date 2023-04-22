@@ -1,0 +1,139 @@
+@import "helper/_variabels.scss";
+$float-left: right;
+$float-right: left;
+$text-right: left;
+$text-left: right;
+
+.header {
+  .logo {
+    @media #{$minmedium} {
+      float: $float-left;
+      text-align: $text-left;
+    }
+    @media (max-width: 280px) {
+      text-align: center;
+    }
+    .toggler {
+      position: absolute;
+      right: auto;
+      left: 10px;
+    }
+  }
+  .navbar {
+    @media #{$minsmall} {
+      text-align: center;
+      //   display: none;
+      //      border-radius: 0;
+      // float: none;
+      //      overflow: hidden
+    }
+    @media #{$minmedium} {
+      float: $float-left;
+      text-align: $text-left;
+    }
+
+    li {
+      float: $float-left;
+
+      text-align: $text-left;
+    }
+  }
+}
+
+// slider
+.slider {
+  .para {
+    text-align: center;
+  }
+  .bar-slider {
+    text-align: center;
+  }
+
+  .services {
+    .service-box {
+      @media #{$minmedium} {
+        float: $float-left;
+      }
+    }
+  }
+}
+
+.player {
+  .player-box {
+    @media #{$minsmall} {
+      float: $float-left;
+    }
+  }
+}
+
+.loraam {
+  .loram {
+    float: $float-left;
+  }
+}
+
+.footer {
+  .blog,
+  .company,
+  .contact {
+    float: $float-left;
+  }
+
+  .image {
+    text-align: center;
+
+    img {
+      @media #{$minsmall} {
+        float: $float-left;
+      }
+      // @media #{$maxmobile}{
+      //   text-align: center;
+      //   float: none;
+
+      // }
+    }
+    .text {
+      @media #{$minsmall} {
+        float: $float-left;
+      }
+      // @media #{$maxmobile}{
+      //   text-align: center;
+      //   float: none;
+      // }
+    }
+    .section {
+      text-align: center;
+    }
+  }
+  .company {
+    text-align: center;
+
+    // &:not(:last-of-type){
+    //   margin: 1rem;
+    // }
+
+    ul {
+      text-align: center;
+    }
+    h4 {
+      color: $redcolor;
+    }
+    p {
+      display: block;
+      color: #747373;
+    }
+  }
+  .contact {
+    text-align: center;
+  }
+
+  .copyright {
+    .copy,
+    .copy2 {
+      float: $float-left;
+    }
+    .copy2 {
+      text-align: $text-right;
+    }
+  }
+}

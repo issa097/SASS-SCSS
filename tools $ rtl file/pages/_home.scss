@@ -1,0 +1,143 @@
+
+
+// slider
+.slider {
+  .para {
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+
+    font-weight: bold;
+  }
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .bar-slider {
+    text-align: center;
+    li {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgb(243, 238, 238);
+      display: inline-block;
+      align-items: center;
+      border: 1px solid rgb(14, 13, 13);
+      cursor: pointer;
+      &:hover {
+        background-color: $redcolor;
+      }
+      &.active {
+        background-color: $redcolor;
+      }
+    }
+  }
+}
+
+.services {
+  .service-box {
+    
+    @media #{$minmedium}{
+      width: (100%/3);
+      padding: 40px auto;
+      float: $float-left;
+      
+  
+      &:not(:last-of-type) {
+        padding-right: 20px;
+      }
+    }
+    
+    @media #{$maxmobile} {
+      i {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+    h3 {
+      font-size: 30px;
+      margin-left: 5px;
+      margin-right: 5px;
+      i {
+        color: $redcolor;
+        font-size: 40px;
+      }
+    }
+    p {
+      color: $graycolor;
+    }
+    a {
+      color: $redcolor;
+      text-decoration: none;
+    }
+  }
+}
+
+.player {
+  .player-box {
+    
+    
+    
+    @media #{$minsmall} {
+      float: $float-left;
+      width: (100%/2);
+      padding-right: 10px;
+      padding-left: 10px;
+
+      margin-bottom: 20px;
+    }
+    @media #{$minmedium} {
+      
+      width: (100%/3);
+    
+  }
+  @media #{$minlarge} {
+   
+    width: (100%/5);
+  
+}
+    @media #{$maxmobile} {
+      
+      
+        margin-bottom: 15px;
+      
+    }
+
+    img {
+      width: 100%;
+
+      border-radius: 10px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      span {
+        font-size: 20px;
+        color: $redcolor;
+      }
+    }
+    p {
+      color: $graycolor;
+    }
+    a {
+      color: $redcolor;
+      text-decoration: none;
+    }
+  }
+}
+
+.loraam {
+  .loram {
+    width: (100%/3);
+    float: $float-left;
+    padding: 10px;
+
+    img {
+      width: 100%;
+      border-radius: 15px;
+    }
+  }
+}
